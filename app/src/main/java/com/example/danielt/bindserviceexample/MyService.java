@@ -32,6 +32,7 @@ public class MyService extends Service {
 
     }
 
+    //取得 MyService 的 Activity，能透過取得的 MyService 直接呼叫該方法
     public void toast(){
         Toast.makeText(MyService.this, "Method called from MyService", Toast.LENGTH_SHORT).show();
     }
