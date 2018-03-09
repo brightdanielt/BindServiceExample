@@ -17,7 +17,7 @@ public class MainActivity extends AppCompatActivity implements ServiceConnection
 
         //啟動 MyService
         Intent i = new Intent();
-        i.setClass(getApplicationContext(), MyService.class);
+        i.setClass(MainActivity.this,MyService.class);
         bindService(i,this,BIND_AUTO_CREATE);
     }
 
